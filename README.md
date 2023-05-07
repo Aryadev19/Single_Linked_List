@@ -122,3 +122,78 @@ We are using `val` for the piece of the data and `next` for the reference to the
 ### The code implementation
 
 ![get method](./images/get.png)
+
+### Set
+
+- Changing the value of a node based on it's position in the LinkedList
+
+### Set pseudocode
+
+- The function should accept a value and an index
+- Use your get function to find the specific node.
+- If the node is not found, return false
+- If the node is found, set the value of that node to be the value passed to the function and return true
+
+### The code implementation
+
+![set method](./images/set.png)
+
+### Insert
+
+- insert an node at a given position in the list
+
+### Insert pseudocode
+
+- If the index is less than zero or greater than the length, return false
+- If the index is the same as the length push a new node to the end of the list
+- If the index is 0 then unshift a new node to the start of the list
+- Use the get method to access the node at index-1
+- set the next property on that node to be the new node
+- set the next property of the newNode to be the previous next node
+- Increment the length by 1
+- return true
+
+### The code implementation
+
+![insert method](./images/insert.png)
+
+### Remove
+
+- Removing a node from a specific position of the list
+
+### Remove pseudocode
+
+- If the index is less than zero or greater than the length, return undefined
+- If the index is the same as the length -1,pop
+- If the index is 0, shift
+- Otherwise, using the get method, access the node at the index-1
+- Set the next property on that node to be the next of the next node
+- Decrement the length by 1
+- Return the value of the node removed
+
+### Code implementation
+
+![remove method](./images/remove.png)
+
+### Reverse
+
+- Reverse the linked list
+
+### Reverse pseudocode
+
+- Swap the head and tail
+- Create a variable called next
+- Create a variable called prev
+- Create a variable called node and initialize it to the head property
+- Loop through the list
+- Set next to be the next property on whatever node is
+- Set the next property on the node to be whatever prev node is
+- Set prev to be the value of the node variable
+- Set the node variable to be the value of the next variable
+- Return the reversed list
+
+### Code implementation
+
+![reverse method](./images/reverse.png)
+
+### That's it fellas it's over!
