@@ -108,3 +108,17 @@ We are using `val` for the piece of the data and `next` for the reference to the
 ### The code implementation
 
 ![unshift method](./images/unshift.png)
+
+### Get
+
+- To retrieve an element from the list
+
+### Get pseudocode
+
+- This function should accept an index
+- If the index is less than zero or greater than or equal to the length of the list, return null
+- Loop through the list until you reach the index and return the node at that specific index
+
+### The code implementation
+
+![get method](./images/get.png)
