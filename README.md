@@ -41,15 +41,36 @@ We are using `val` for the piece of the data and `next` for the reference to the
 
   ![Single linked list codesnap](./images/sll.png)
 
-- **Pushing**
+### **Pushing**
+
 - The push method add element in the end of the linked list
-- **Push Pseudocode**
 
-  - This function should accept a value
-  - Create a new node using the value passed to the function
-  - If there is no head property on the list, set the head and tail to be the newly created node
-  - Otherwise set the next property on the tail to be the new node and set the tail property on the list to be the newly created node
+### Push Pseudocode
 
-- The code implementation
+- This function should accept a value
+- Create a new node using the value passed to the function
+- If there is no head property on the list, set the head and tail to be the newly created node
+- Otherwise set the next property on the tail to be the new node and set the tail property on the list to be the newly created node
+- Increment the length
+- Return the whole list
+
+### The code implementation
 
 ![push method](./images/push.png)
+
+### **Popping**
+
+- Popping removes an element from the end.
+
+### Pop Pseudocode
+
+- if there are no nodes in hte list, return undefined
+- Loop through the list until you reach the tail
+- Set the next property of the 2nd to last node to be null
+- Set the tail to be the 2nd to last node
+- Decrement the length of the list by 1
+- return the value of the node removed.
+
+### The code implementation
+
+![pop method](./images/pop.png)
