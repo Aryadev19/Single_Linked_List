@@ -90,3 +90,21 @@ We are using `val` for the piece of the data and `next` for the reference to the
 ### The code implementation
 
 ![shift method](./images/shift.png)
+
+### **Unshifting**
+
+- Add a new **node** at the beginning of the list.
+
+### Unshift Pseudocode
+
+- This function should accept a value
+- Create a new node using the value passed to the function
+- If there is no head property on the list, set the head and tail to be the newly created node
+- Otherwise set the newly created node's next property to be the current head property on the list
+- Set the head property on the list to be that newly created node
+- Increment the length of the list by 1
+- Return the linked list
+
+### The code implementation
+
+![unshift method](./images/unshift.png)
