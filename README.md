@@ -32,9 +32,24 @@ We are using `val` for the piece of the data and `next` for the reference to the
 ## Implementation
 
 - This is how we write the node class method
+
   ![node class codesnap](./images/code.png)
 
 - As we said before a Linked list class contains a head, tail and length property, so we are gonna now implement the SingleLinkedList class method
 
 - This is how we initiate it.
+
   ![Single linked list codesnap](./images/sll.png)
+
+- **Pushing**
+- The push method add element in the end of the linked list
+- **Push Pseudocode**
+
+  - This function should accept a value
+  - Create a new node using the value passed to the function
+  - If there is no head property on the list, set the head and tail to be the newly created node
+  - Otherwise set the next property on the tail to be the new node and set the tail property on the list to be the newly created node
+
+- The code implementation
+
+![push method](./images/push.png)
