@@ -51,7 +51,7 @@ We are using `val` for the piece of the data and `next` for the reference to the
 - Create a new node using the value passed to the function
 - If there is no head property on the list, set the head and tail to be the newly created node
 - Otherwise set the next property on the tail to be the new node and set the tail property on the list to be the newly created node
-- Increment the length
+- Increment the length of the list by 1
 - Return the whole list
 
 ### The code implementation
@@ -74,3 +74,19 @@ We are using `val` for the piece of the data and `next` for the reference to the
 ### The code implementation
 
 ![pop method](./images/pop.png)
+
+### **Shifting**
+
+- Remove the first element from the list
+
+### Shift Pseudocode
+
+- If there are no nodes, return undefined
+- Store the current head property in a variable
+- Set the head property to be the current head's next property
+- Decrement the length by 1
+- Return the value of the node removed
+
+### The code implementation
+
+![shift method](./images/shift.png)
